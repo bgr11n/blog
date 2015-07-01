@@ -1,6 +1,6 @@
 class HomeController < Pine::Controller
   def index
     a
-    'asd'
+    Pine.env
   end
 end
