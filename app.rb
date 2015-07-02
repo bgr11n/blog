@@ -1,8 +1,6 @@
 require 'pine'
 
-Dir[File.join(".", "controllers/*.rb")].each do |f|
-  require f
-end
+Dir[File.join(".", "controllers/*.rb")].each { |f| require f }
 
 class App < Pine::App
   use 'from app'
