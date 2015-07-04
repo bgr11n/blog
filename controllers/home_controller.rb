@@ -1,5 +1,5 @@
 class HomeController < Pine::Controller
   def index
-    Pine.env
+    params.inspect
   end
 end
