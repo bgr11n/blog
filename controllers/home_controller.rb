@@ -1,5 +1,7 @@
 class HomeController < Pine::Controller
   def index
-    params.inspect
+    status 201
+    response.headers = { 'Content-Type' => 'application/json' }
+    request.request_method
   end
 end
