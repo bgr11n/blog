@@ -1,5 +1,5 @@
-class HomeController < Pine::Controller::Base
+class HomeController
   def index
-    params.inspect
+    a
   end
 end

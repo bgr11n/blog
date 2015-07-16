@@ -1,4 +1,4 @@
-class HelloController < Pine::Controller::Base
+class HelloController
   def index
     "Hello #{params[:name]}!"
   end

@@ -1,4 +1,4 @@
-class UserController < Pine::Controller::Base
+class UserController
   def me
     params.inspect
   end
