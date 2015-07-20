@@ -1,4 +1,4 @@
-class HomeController
+class HomeController < Pine::Controller
   def index
     a
   end
