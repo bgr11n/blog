@@ -1,9 +1,10 @@
 require 'pine'
+require 'json'
 
 Dir[File.join(".", "controllers/*.rb")].each { |f| require f }
 
 class App < Pine::App
-  get '/', to: 'hello#index'
+  get '/', to: 'home#index'
   get '/hello/:name', to: 'hello#index'
 
   namespace 'user' do
